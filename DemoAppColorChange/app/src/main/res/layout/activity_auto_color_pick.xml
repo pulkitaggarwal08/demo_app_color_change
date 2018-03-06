@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pulkit.demo_app_color_change.com.demoappcolorchange.activities.AutoColorPickActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Color Pick"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#ffffff" />
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/iv_pick_color"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_palette_white_24dp"
+        android:backgroundTint="#d3d3" />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_pick_color"
+        android:layout_centerInParent="true"
+        android:text="Click here to Pick Color"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+</RelativeLayout>
